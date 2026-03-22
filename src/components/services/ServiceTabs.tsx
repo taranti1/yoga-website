@@ -50,20 +50,57 @@ export default function ServiceTabs() {
   );
 }
 
-/* ─── Yoga Cards ─── */
+/* ─── Yoga Schedule ─── */
+
+const classSchedule = [
+  { day: "Mondays", style: "Vinyasa Flow", time: "9:15am – 10:45am", location: "Alluem Yoga, Cranford" },
+  { day: "Tuesdays", style: "Vinyasa Flow Level 2/3", time: "9:30am – 10:45am", location: "Bhakti Barn, Millburn" },
+  { day: "Wednesdays", style: "Vinyasa Flow", time: "6:00pm – 7:15pm", location: "Alluem Yoga, Cranford" },
+  { day: "Wednesdays", style: "Beginner", time: "7:30pm – 8:45pm", location: "Alluem Yoga, Cranford" },
+  { day: "Sundays", style: "Vinyasa Flow", time: "9:30am – 10:45am", location: "LBI Foundation (June–September)" },
+];
 
 function YogaGrid() {
   return (
-    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      {yogaStyles.map((style) => (
-        <ServiceCard
-          key={style.slug}
-          image={style.image}
-          title={style.name}
-          description={style.description}
-          badges={[style.level, style.duration]}
-        />
-      ))}
+    <div className="max-w-3xl mx-auto">
+      <h3 className="font-body text-xs font-semibold tracking-[0.2em] uppercase text-clay text-center mb-10">
+        Class Schedule
+      </h3>
+
+      <div className="space-y-0 divide-y divide-sand">
+        {classSchedule.map((cls, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: i * 0.05 }}
+            className="grid grid-cols-1 sm:grid-cols-[140px_1fr_1fr_1fr] gap-1 sm:gap-4 items-baseline py-5"
+          >
+            <span className="font-body text-sm font-semibold text-deep-forest">
+              {cls.day}
+            </span>
+            <span className="font-heading text-base italic text-deep-forest">
+              {cls.style}
+            </span>
+            <span className="font-body text-sm text-charcoal/70">
+              {cls.time}
+            </span>
+            <span className="font-body text-sm text-charcoal/60">
+              {cls.location}
+            </span>
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="mt-12 pt-8 border-t border-sand text-center">
+        <p className="font-body text-sm text-charcoal/70 italic mb-8">
+          Cynthia is available for individual privates and small group privates upon request.
+        </p>
+        <Button href="/contact" variant="primary" size="lg">
+          Sign Up
+        </Button>
+      </div>
     </div>
   );
 }

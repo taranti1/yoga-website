@@ -24,7 +24,7 @@ const services = [
     icon: Mountain,
     title: "Workshops & Retreats",
     description:
-      "Go deeper with immersive experiences — from new moon ceremonies and reiki trainings to our signature petite retreat at Orchard View Lavender Farm.",
+      "Go deeper with immersive experiences — from reiki trainings to our signature petite retreat at Orchard View Lavender Farm.",
     href: "/services",
   },
 ];

@@ -42,44 +42,51 @@ export default function HeroSection() {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-warm-white/10"
       />
 
-      {/* Content */}
+      {/* Content — split into two groups for independent positioning */}
       <motion.div
         style={{ opacity }}
-        className="relative z-10 text-center px-6 max-w-3xl"
+        className="relative z-10 text-center px-6 max-w-3xl flex flex-col items-center h-[75vh] justify-between pt-[2vh] pb-[6vh]"
       >
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-body text-xs tracking-[0.2em] uppercase text-warm-white/70 mb-6"
-        >
-          Yoga & Reiki in New Jersey
-        </motion.p>
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl text-warm-white font-light leading-[1.1] mb-6"
-        >
-          Cynthia Tarantino
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="font-heading text-xl md:text-2xl text-warm-white/80 italic mb-10"
-        >
-          Guiding you home to yourself
-        </motion.p>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-        >
-          <Button href="/services" variant="primary" size="lg">
-            Begin Your Journey
-          </Button>
-        </motion.div>
+        {/* Top group: title + subtitle — pushed higher */}
+        <div>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="font-body text-xs tracking-[0.2em] uppercase text-warm-white/70 mb-6"
+          >
+            Yoga & Reiki in New Jersey
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="font-heading text-5xl md:text-7xl lg:text-8xl text-warm-white font-light leading-[1.1]"
+          >
+            Cynthia Tarantino
+          </motion.h1>
+        </div>
+
+        {/* Bottom group: tagline + CTA — pushed lower */}
+        <div>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="font-heading text-xl md:text-2xl text-warm-white/80 italic mb-10"
+          >
+            Guiding you home to yourself
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+          >
+            <Button href="/services" variant="primary" size="lg">
+              Begin Your Journey
+            </Button>
+          </motion.div>
+        </div>
       </motion.div>
 
       {/* Scroll Indicator */}

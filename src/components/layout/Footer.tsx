@@ -5,7 +5,7 @@ import LotusIcon from "@/components/decorative/LotusIcon";
 const quickLinks = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Journal", href: "/journal" },
+  { label: "Blog", href: "/journal" },
   { label: "Contact", href: "/contact" },
 ];
 

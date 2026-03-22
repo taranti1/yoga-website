@@ -28,10 +28,27 @@ export default function ContactForm() {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = (data: ContactFormData) => {
-    // TODO: Integrate with backend/email service (e.g., Resend, SendGrid, Netlify Forms)
-    console.log("Contact form submission:", data);
-    setIsSubmitted(true);
+  const onSubmit = async (data: ContactFormData) => {
+    try {
+      const response = await fetch("https://formspree.io/f/mbdzvojd", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          _subject: `[Website Contact] ${data.subject}`,
+          Name: data.name,
+          Email: data.email,
+          Subject: data.subject,
+          Message: data.message,
+        }),
+      });
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        alert("Something went wrong. Please try again or email directly.");
+      }
+    } catch {
+      alert("Something went wrong. Please try again or email directly.");
+    }
   };
 
   const inputClasses =

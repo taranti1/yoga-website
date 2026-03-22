@@ -6,7 +6,7 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 import { posts } from "@/data/journal";
 
 export const metadata: Metadata = {
-  title: "The Journal",
+  title: "Blog",
   description:
     "Reflections on yoga, reiki, breathwork, and mindful living from Cynthia Tarantino. Practical guidance for your practice on and off the mat.",
 };
@@ -15,7 +15,7 @@ export default function JournalPage() {
   return (
     <>
       <PageHero
-        title="The Journal"
+        title="Blog"
         subtitle="Reflections, guidance, and inspiration for your practice"
         backgroundImage="/images/reiki/training/training-1.jpg"
       />

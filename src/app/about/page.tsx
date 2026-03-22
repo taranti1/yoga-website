@@ -20,7 +20,7 @@ export default function AboutPage() {
       <PageHero
         title="About"
         subtitle="The heart behind the practice"
-        backgroundImage="/images/yoga/class-1.jpg"
+        backgroundImage="/images/cynthia/about-hero.jpg"
       />
 
       {/* My Story */}
@@ -49,20 +49,18 @@ export default function AboutPage() {
               <p>
                 I came to yoga the way many people do — exhausted, carrying more
                 tension in my body than I realized, and searching for something I
-                couldn&rsquo;t quite name. My first class was humbling and
-                awkward, but there was a moment in savasana where the noise in my
-                mind finally softened. That stillness changed the entire
-                trajectory of my life. I knew I had found the practice that would
-                anchor everything else.
+                couldn&rsquo;t quite name. I recall being in a vinyasa class and
+                my breath carried me to place of calm and peace that was new to
+                me. In that moment I was pulled to continue a practice that would
+                be the anchor for everything else in my life.
               </p>
 
               <p>
-                Within a few years I completed my 200-hour teacher training at
-                Kripalu, and the experience cracked me open in the most beautiful
-                way. Teaching became a calling, not just a profession. I went on
-                to earn my 500-hour certification and immersed myself in yin,
-                prenatal, and restorative yoga — each modality deepening my
-                understanding of how the body holds and releases both physical
+                After several years of teacher training in yoga philosophy,
+                poses, breathwork and the energy body, teaching became a calling
+                for me. My desire to learn continued with an immersion in
+                restorative yoga certification with each of these areas deepening
+                my understanding of how the body holds and releases both physical
                 and emotional weight.
               </p>
 
@@ -71,10 +69,10 @@ export default function AboutPage() {
                 subtle energy work complemented my yoga practice so naturally
                 that I pursued training all the way to the Master/Teacher level.
                 Today I weave together movement, breath, and energy healing to
-                meet each student exactly where they are. Whether you step onto
-                the mat for the very first time or you&rsquo;ve been practicing
-                for decades, my deepest intention is to create a space where you
-                feel held, seen, and free to simply be.
+                meet each student where they are. Whether you step onto the mat
+                for the very first time or you&rsquo;ve been practicing for
+                decades, my deepest intention is to create a space where you feel
+                held, seen, and free to simply be.
               </p>
             </div>
           </div>
@@ -93,12 +91,10 @@ export default function AboutPage() {
 
           <blockquote className="relative z-10 max-w-3xl text-center">
             <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-deep-forest italic leading-snug font-light">
-              &ldquo;Yoga is not about touching your toes. It is about what you
-              learn on the way down. I believe every body is a yoga body, and
-              every moment of stillness is a doorway to healing.&rdquo;
+              &ldquo;My actions are my only true belongings.&rdquo;
             </p>
             <footer className="mt-8 font-body text-sm uppercase tracking-widest text-clay">
-              — Cynthia
+              — Thich Nhat Hanh
             </footer>
           </blockquote>
         </div>

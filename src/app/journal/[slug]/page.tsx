@@ -74,7 +74,7 @@ export default async function JournalPostPage({
             className="inline-flex items-center font-body text-sm text-sage hover:text-deep-forest transition-colors duration-300 mb-10"
           >
             <span className="mr-2">&larr;</span>
-            Back to Journal
+            Back to Blog
           </Link>
 
           <article className="prose-custom">
@@ -114,7 +114,7 @@ export default async function JournalPostPage({
           <div className="mt-16 pt-10 border-t border-sand flex items-center gap-6">
             <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
               <Image
-                src="/images/cynthia/hero-portrait.jpg"
+                src="/images/cynthia/cynthia-headshot.jpg"
                 alt="Cynthia Tarantino"
                 fill
                 className="object-cover"
@@ -126,7 +126,7 @@ export default async function JournalPostPage({
                 Cynthia Tarantino
               </p>
               <p className="font-body text-sm text-charcoal/60">
-                Yoga instructor & Usui Reiki Master based in New Jersey
+                Yoga instructor & Reiki Master based in New Jersey
               </p>
             </div>
           </div>

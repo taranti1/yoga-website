@@ -47,15 +47,13 @@ export default function AboutSnippet() {
             <p>
               I believe yoga and reiki are pathways home — back to the body, back
               to the breath, back to the truest version of ourselves. My teaching
-              is grounded in the belief that healing isn't about fixing what's
-              broken, but about remembering what's whole.
-            </p>
-            <p>
-              With over fifteen years of practice and study, I bring a deep
-              reverence for these traditions and a warm, accessible teaching
-              style to every class, session, and retreat. Whether you're stepping
-              onto the mat for the first time or deepening a lifelong practice,
-              you'll find a safe and sacred space here.
+              is grounded in the belief that healing isn&rsquo;t about fixing what&rsquo;s
+              broken, but about remembering what&rsquo;s whole. With over a decade of
+              practice and study, I bring a deep reverence for these traditions
+              and a warm, accessible teaching style to every class, session, and
+              retreat. Whether you&rsquo;re stepping onto the yoga mat for the first
+              time, embracing the energy of Reiki healing or deepening your self
+              care practice, you&rsquo;ll find a safe and sacred space here.
             </p>
           </div>
 

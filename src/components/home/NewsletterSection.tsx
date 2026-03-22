@@ -20,10 +20,25 @@ export default function NewsletterSection() {
     resolver: zodResolver(newsletterSchema),
   });
 
-  const onSubmit = (data: NewsletterFormData) => {
-    // TODO: Integrate with email service (Mailchimp, ConvertKit, etc.)
-    console.log("Newsletter signup:", data);
-    setIsSubmitted(true);
+  const onSubmit = async (data: NewsletterFormData) => {
+    try {
+      const response = await fetch("https://formspree.io/f/mbdzvojd", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          _subject: "[Website] Newsletter Signup",
+          email: data.email,
+          _formType: "newsletter",
+        }),
+      });
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch {
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -82,7 +97,7 @@ export default function NewsletterSection() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-deep-forest text-warm-white font-body text-sm font-semibold tracking-wide uppercase hover:bg-sage transition-colors duration-300 disabled:opacity-50"
               >
                 <Send size={14} />
-                Subscribe
+                Keep Me Updated
               </button>
             </motion.form>
           )}

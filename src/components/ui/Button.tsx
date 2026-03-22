@@ -17,7 +17,7 @@ const variantStyles: Record<ButtonVariant, string> = {
   primary:
     "bg-deep-forest text-warm-white hover:bg-sage transition-colors duration-300",
   secondary:
-    "border border-deep-forest text-deep-forest hover:bg-deep-forest hover:text-warm-white transition-colors duration-300",
+    "border border-warm-white text-warm-white hover:bg-warm-white hover:text-deep-forest transition-colors duration-300",
   ghost:
     "text-deep-forest hover:text-sage transition-colors duration-300 underline underline-offset-4 decoration-clay/40",
 };

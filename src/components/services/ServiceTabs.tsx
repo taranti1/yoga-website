@@ -7,7 +7,7 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 import Button from "@/components/ui/Button";
 import { yogaStyles, reikiServices, workshops } from "@/data/services";
 
-const tabs = ["Yoga", "Reiki", "Workshops & Retreats"] as const;
+const tabs = ["Yoga", "Reiki", "Events"] as const;
 type Tab = (typeof tabs)[number];
 
 export default function ServiceTabs() {
@@ -43,7 +43,7 @@ export default function ServiceTabs() {
         >
           {activeTab === "Yoga" && <YogaGrid />}
           {activeTab === "Reiki" && <ReikiGrid />}
-          {activeTab === "Workshops & Retreats" && <WorkshopGrid />}
+          {activeTab === "Events" && <EventsGrid />}
         </motion.div>
       </AnimatePresence>
     </SectionWrapper>
@@ -95,7 +95,7 @@ function YogaGrid() {
 
       <div className="mt-12 pt-8 border-t border-sand text-center">
         <p className="font-body text-sm text-charcoal/70 italic mb-8">
-          Cynthia is available for individual privates and small group privates upon request.
+          I am available for individual privates and small group privates upon request.
         </p>
         <Button href="/contact" variant="primary" size="lg">
           Sign Up
@@ -123,19 +123,65 @@ function ReikiGrid() {
   );
 }
 
-/* ─── Workshop Cards ─── */
+/* ─── Events Overview ─── */
 
-function WorkshopGrid() {
+const eventSummaries = [
+  {
+    title: "Petite Reiki Retreat",
+    description: "A signature day of renewal at Orchard View Lavender Farm — gentle yoga, reiki healing, guided meditation, and mindful connection with nature.",
+    anchor: "petite-retreat",
+    image: "/images/reiki/retreat/retreat-2.jpg",
+  },
+  {
+    title: "Reiki Workshops",
+    description: "Special evening gatherings blending restorative yoga, reiki healing, breathwork, and guided visualization for deep renewal.",
+    anchor: "reiki-workshops",
+    image: "/images/reiki/training/training-1.jpg",
+  },
+  {
+    title: "Reiki Trainings",
+    description: "Immersive training experiences combining breathwork, restorative yoga, reiki, and nourishing connection in beautiful settings.",
+    anchor: "reiki-trainings",
+    image: "/images/reiki/training/training-4.jpg",
+  },
+];
+
+function EventsGrid() {
   return (
     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      {workshops.map((workshop) => (
-        <ServiceCard
-          key={workshop.slug}
-          image={workshop.image}
-          title={workshop.name}
-          description={workshop.description}
-          badges={[workshop.location, workshop.date]}
-        />
+      {eventSummaries.map((event) => (
+        <motion.div
+          key={event.anchor}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="group flex flex-col bg-cream rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+        >
+          <div className="relative h-56 overflow-hidden">
+            <Image
+              src={event.image}
+              alt={event.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          </div>
+          <div className="flex flex-col flex-1 p-6">
+            <h3 className="font-heading text-2xl text-deep-forest mb-3">
+              {event.title}
+            </h3>
+            <p className="font-body text-charcoal/80 text-sm leading-relaxed mb-6 flex-1">
+              {event.description}
+            </p>
+            <a
+              href={`#${event.anchor}`}
+              className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm rounded-full bg-deep-forest text-warm-white font-body font-semibold tracking-wide uppercase hover:bg-sage transition-colors duration-300"
+            >
+              More Details
+            </a>
+          </div>
+        </motion.div>
       ))}
     </div>
   );
@@ -192,7 +238,7 @@ function ServiceCard({ image, title, description, badges }: ServiceCardProps) {
           {description}
         </p>
 
-        <Button href="/contact" variant="secondary" size="sm">
+        <Button href="/contact" variant="primary" size="sm">
           Contact Cynthia
         </Button>
       </div>

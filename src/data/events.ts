@@ -10,33 +10,33 @@ export interface Event {
 
 export const upcomingEvents: Event[] = [
   {
-    id: "lavender-retreat-spring",
-    title: "Spring Petite Retreat",
-    date: "April 19, 2026",
-    time: "9:00 AM – 4:00 PM",
-    location: "Orchard View Lavender Farm",
+    id: "petite-retreat-sept",
+    title: "Petite Retreat at Orchard View Lavender Farm",
+    date: "September 18, 2026",
+    time: "11:00 AM – 3:00 PM",
+    location: "Orchard View Lavender Farm, Port Murray, NJ",
     description:
-      "A full-day retreat blending yoga, reiki, meditation, and the healing beauty of the lavender farm. Limited spots available.",
+      "A signature day of renewal weaving together gentle yoga, reiki healing, guided meditation, and mindful connection with nature surrounded by fragrant lavender fields.",
     image: "/images/reiki/retreat/retreat-2.jpg",
   },
   {
-    id: "new-moon-april",
-    title: "New Moon Yin & Reiki",
-    date: "April 12, 2026",
-    time: "7:00 PM – 9:00 PM",
-    location: "Cranford, NJ",
+    id: "root-to-bloom",
+    title: "Root To Bloom: Reiki & Restorative",
+    date: "April 26, 2026",
+    time: "11:00 AM – 2:00 PM",
+    location: "with Stefanie & Cynthia",
     description:
-      "Release and set intentions under the new moon with yin yoga and group reiki healing.",
+      "An afternoon of restorative yoga and reiki to root and bloom into Spring — guided visualizations, breathwork, essential oils, and individual hands-on reiki.",
     image: "/images/reiki/training/training-1.jpg",
   },
   {
-    id: "reiki-training-may",
-    title: "Reiki Level I Certification",
-    date: "May 3, 2026",
-    time: "10:00 AM – 5:00 PM",
-    location: "Summit, NJ",
+    id: "art-of-reiki",
+    title: "The Art of Reiki: Level I & II Training",
+    date: "Fall/Winter 2026",
+    time: "Two weekends",
+    location: "New Jersey",
     description:
-      "Begin your reiki journey. Learn Usui Reiki principles, receive your attunement, and leave certified to practice.",
+      "A transformational two-day Reiki certification training covering attunements, hand placements, symbols, distant healing, chakra balancing, and crystal work.",
     image: "/images/reiki/training/training-4.jpg",
   },
 ];

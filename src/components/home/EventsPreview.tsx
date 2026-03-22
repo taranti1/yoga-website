@@ -15,7 +15,7 @@ export default function EventsPreview() {
           Upcoming
         </p>
         <h2 className="font-heading text-4xl md:text-5xl text-deep-forest font-light">
-          Events & Workshops
+          Events
         </h2>
       </div>
 
@@ -62,8 +62,8 @@ export default function EventsPreview() {
       </div>
 
       <div className="text-center mt-12">
-        <Button href="/contact" variant="secondary">
-          Get in Touch
+        <Button href="/services" variant="primary">
+          View All Events
         </Button>
       </div>
     </SectionWrapper>

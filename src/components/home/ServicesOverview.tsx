@@ -22,7 +22,7 @@ const services = [
   },
   {
     icon: Mountain,
-    title: "Workshops & Retreats",
+    title: "Events",
     description:
       "Go deeper with immersive experiences — from reiki trainings to our signature petite retreat at Orchard View Lavender Farm.",
     href: "/services",

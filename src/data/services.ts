@@ -49,31 +49,31 @@ export const yogaStyles: YogaStyle[] = [
 
 export const reikiServices: ReikiService[] = [
   {
-    slug: "in-person-reiki-60",
-    name: "In-Person Reiki Session",
+    slug: "reiki-with-messages",
+    name: "Reiki Private Session with Messages",
     description:
-      "A full reiki healing session in a peaceful, sacred space. Through gentle hand placement, I channel universal life energy to clear blockages, balance your chakras, and support your body's natural healing abilities. You'll leave feeling lighter, calmer, and more aligned.",
-    duration: "60 min",
+      "A deeply healing in-person reiki session combined with intuitive channeled messages. As I work with your energy through gentle hand placement, I receive and share intuitive guidance meant specifically for you. This session supports energetic clearing, emotional release, and offers meaningful insight to help guide your path forward.",
+    duration: "",
     format: "In-Person",
     image: "/images/reiki/training/training-1.jpg",
   },
   {
-    slug: "in-person-reiki-90",
-    name: "Extended Reiki Session",
+    slug: "reiki-with-medium-reading",
+    name: "Reiki Private Session with Messages & Medium Reading",
     description:
-      "A deeper, more comprehensive reiki experience that includes an intuitive body scan, extended energy work on areas of concern, and guided meditation. This session allows for a more thorough clearing and is ideal for those working through significant life transitions or chronic stress.",
-    duration: "90 min",
+      "This in-person session combines the deep healing of reiki energy work with intuitive messages and a medium reading to connect you with loved ones who have passed. A profoundly moving experience that brings comfort, clarity, and a sense of continued connection across the veil.",
+    duration: "",
     format: "In-Person",
-    image: "/images/reiki/training/training-2.jpg",
+    image: "/images/reiki/training/reiki-bowl.jpg",
   },
   {
-    slug: "distance-reiki",
-    name: "Distance Reiki",
+    slug: "distant-reiki",
+    name: "Distant Reiki",
     description:
-      "Reiki energy transcends physical space. In a distance session, you relax in your own home while I send healing energy using the distance symbol. We connect via phone or video at the start and end of the session. Many clients find distance sessions equally powerful and deeply transformative.",
-    duration: "45 min",
+      "Reiki energy transcends physical space. In a distant session, you relax in the comfort of your own home while I send healing energy remotely. We connect via video call or phone at the start and end of the session. Many clients find distant sessions equally powerful and deeply transformative.",
+    duration: "",
     format: "Remote",
-    image: "/images/reiki/training/training-3.jpg",
+    image: "/images/reiki/training/distant-reiki-v2.jpg",
   },
 ];
 

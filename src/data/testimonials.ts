@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
   {
     name: "Amanda R.",
     quote:
-      "The lavender farm retreat was truly magical. Cynthia creates such a sacred, intentional space. Between the yoga, reiki, and the beauty of the farm, I felt like I'd been on vacation for a week — and it was just one day.",
+      "The lavender farm retreat was truly magical. Cynthia creates such a sacred, intentional space. Between the yoga, reiki, and the beauty of the farm, I felt like I'd been on vacation for a week but it was just one day.",
     context: "Retreat Participant",
   },
   {

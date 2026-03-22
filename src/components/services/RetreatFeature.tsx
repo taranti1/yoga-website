@@ -181,7 +181,7 @@ export default function RetreatFeature() {
                 and bright.
               </p>
               <p className="font-heading text-lg text-deep-forest mb-8">
-                $50 per person
+                $55 per person
               </p>
               <Button href="/contact" variant="primary" size="lg">
                 Reserve Your Spot

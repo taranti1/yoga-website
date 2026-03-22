@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "@/data/navigation";
+import { navLinks, ctaLink } from "@/data/navigation";
 import LotusIcon from "@/components/decorative/LotusIcon";
 
 export default function Navbar() {
@@ -95,14 +95,14 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href={ctaLink.href}
               className={`font-body text-xs font-semibold tracking-[0.08em] uppercase px-5 py-2.5 rounded-full transition-all duration-300 ${
                 showSolid
                   ? "bg-deep-forest text-warm-white hover:bg-sage"
                   : "bg-warm-white/20 text-warm-white border border-warm-white/40 hover:bg-warm-white/30"
               }`}
             >
-              Book a Session
+              {ctaLink.label}
             </Link>
           </div>
 
@@ -154,14 +154,14 @@ export default function Navbar() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.4 }}
+                transition={{ delay: 0.35, duration: 0.4 }}
               >
                 <Link
-                  href="/contact"
+                  href={ctaLink.href}
                   onClick={() => setIsMobileOpen(false)}
                   className="mt-4 inline-block font-body text-sm font-semibold tracking-[0.08em] uppercase px-8 py-3 rounded-full bg-sage text-warm-white hover:bg-sage-light transition-colors duration-300"
                 >
-                  Book a Session
+                  {ctaLink.label}
                 </Link>
               </motion.div>
             </nav>

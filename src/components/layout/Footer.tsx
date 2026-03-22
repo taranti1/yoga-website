@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { Instagram, Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 import LotusIcon from "@/components/decorative/LotusIcon";
 
 const quickLinks = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Schedule", href: "/schedule" },
   { label: "Journal", href: "/journal" },
   { label: "Contact", href: "/contact" },
 ];
@@ -19,9 +18,7 @@ const serviceLinks = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Instagram, href: "https://www.instagram.com/cynthia.a.tarantino/", label: "Instagram" },
 ];
 
 export default function Footer() {

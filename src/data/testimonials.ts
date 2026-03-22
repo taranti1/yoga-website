@@ -33,7 +33,7 @@ export const testimonials: Testimonial[] = [
     name: "Lisa K.",
     quote:
       "I've practiced yoga for over fifteen years with many different teachers, and Cynthia is exceptional. Her knowledge of the body, her warmth, and her ability to weave philosophy into practice sets her apart.",
-    context: "Yin Yoga Student",
+    context: "Vinyasa Flow Student",
   },
   {
     name: "David P.",

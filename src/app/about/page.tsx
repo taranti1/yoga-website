@@ -5,7 +5,7 @@ import PageHero from "@/components/ui/PageHero";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Button from "@/components/ui/Button";
 import SacredGeometry from "@/components/decorative/SacredGeometry";
-import CredentialsTimeline from "@/components/about/CredentialsTimeline";
+
 
 export const metadata: Metadata = {
   title: "About",
@@ -79,20 +79,6 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </SectionWrapper>
-
-      {/* Credentials Timeline */}
-      <SectionWrapper background="cream">
-        <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-deep-forest font-light">
-            Training &amp; Credentials
-          </h2>
-          <p className="font-body text-charcoal/60 mt-4 max-w-lg mx-auto">
-            A lifelong commitment to learning, growing, and deepening the
-            practice.
-          </p>
-        </div>
-        <CredentialsTimeline />
       </SectionWrapper>
 
       {/* Philosophy */}

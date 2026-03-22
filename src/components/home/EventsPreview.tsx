@@ -62,8 +62,8 @@ export default function EventsPreview() {
       </div>
 
       <div className="text-center mt-12">
-        <Button href="/schedule" variant="secondary">
-          View Full Schedule
+        <Button href="/contact" variant="secondary">
+          Get in Touch
         </Button>
       </div>
     </SectionWrapper>

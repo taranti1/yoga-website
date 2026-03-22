@@ -141,7 +141,7 @@ function ServiceCard({ image, title, description, badges }: ServiceCardProps) {
 
         {/* Badges */}
         <div className="flex flex-wrap gap-2 mb-4">
-          {badges.map((badge) => (
+          {badges.filter(Boolean).map((badge) => (
             <span
               key={badge}
               className="inline-block font-body text-xs uppercase tracking-wider text-sage bg-sand px-3 py-1 rounded-full"

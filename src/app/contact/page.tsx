@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Accordion from "@/components/ui/Accordion";
@@ -29,12 +29,6 @@ const contactInfo = [
     icon: MapPin,
     label: "Service Areas",
     value: "Long Beach Island, Cranford, Milburn & Summit, NJ",
-    href: null,
-  },
-  {
-    icon: Clock,
-    label: "Response Time",
-    value: "Within 24 hours",
     href: null,
   },
 ];

@@ -31,37 +31,10 @@ export const yogaStyles: YogaStyle[] = [
     slug: "vinyasa-flow",
     name: "Vinyasa Flow",
     description:
-      "A dynamic, breath-synchronized practice that links movement and breath in a flowing sequence. Each class is thoughtfully sequenced to build heat, cultivate strength, and create space in the body. Suitable for those with some yoga experience who enjoy a more active practice.",
-    level: "Intermediate",
-    duration: "60 min",
+      "A dynamic, breath-synchronized practice that links movement and breath in a flowing sequence. Each class is thoughtfully sequenced to build heat, cultivate strength, and create space in the body. All levels are welcome — modifications are always offered so you can find the practice that fits your body.",
+    level: "All Levels",
+    duration: "",
     image: "/images/yoga/class-4.jpg",
-  },
-  {
-    slug: "yin-yoga",
-    name: "Yin Yoga",
-    description:
-      "A slow, meditative practice where poses are held for 3-5 minutes to gently stress the connective tissues — ligaments, tendons, and fascia. This practice cultivates deep stillness and is a beautiful complement to more active styles. Perfect for releasing tension and inviting deep relaxation.",
-    level: "All Levels",
-    duration: "75 min",
-    image: "/images/yoga/class-1.jpg",
-  },
-  {
-    slug: "restorative-yoga",
-    name: "Restorative Yoga",
-    description:
-      "A deeply nourishing practice using bolsters, blankets, and props to support the body in passive poses held for extended periods. This practice activates the parasympathetic nervous system, promoting healing and deep rest. Ideal for stress recovery and anyone seeking profound relaxation.",
-    level: "All Levels",
-    duration: "75 min",
-    image: "/images/yoga/private-session.jpg",
-  },
-  {
-    slug: "prenatal-yoga",
-    name: "Prenatal Yoga",
-    description:
-      "A gentle, supportive practice designed specifically for expectant mothers. Each class focuses on poses that ease common pregnancy discomforts, strengthen the pelvic floor, and teach breathing techniques for labor. A nurturing community for mothers-to-be at any stage of pregnancy.",
-    level: "All Levels",
-    duration: "60 min",
-    image: "/images/yoga/class-3.jpg",
   },
   {
     slug: "private-sessions",
@@ -69,8 +42,8 @@ export const yogaStyles: YogaStyle[] = [
     description:
       "One-on-one yoga sessions tailored entirely to your unique body, goals, and schedule. Whether you're recovering from injury, deepening your practice, or just beginning, private sessions offer personalized attention and a custom-designed practice. Available in-home across all service areas.",
     level: "Personalized",
-    duration: "60–90 min",
-    image: "/images/yoga/class-2.jpg",
+    duration: "",
+    image: "/images/yoga/private-session.jpg",
   },
 ];
 

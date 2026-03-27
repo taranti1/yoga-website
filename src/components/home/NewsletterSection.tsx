@@ -50,7 +50,7 @@ export default function NewsletterSection() {
         </h2>
         <p className="font-body text-sm text-charcoal/70 mb-8">
           Receive reflections, class updates, and invitations to upcoming
-          workshops and retreats — delivered with intention, never with spam.
+          workshops and retreats — delivered with intention
         </p>
 
         <AnimatePresence mode="wait">

@@ -162,14 +162,11 @@ export default function RetreatFeature() {
                 Root To Bloom: Reiki &amp; Restorative
               </h2>
               <p className="font-body text-sm text-charcoal/60 mb-2">
-                with Stefanie &amp; Cynthia
-              </p>
-              <p className="font-body text-sm font-semibold text-deep-forest mb-6">
-                Sunday, 4/26 &middot; 11am–2pm
+                with Stefanie &amp; Cynthia: Sunday, 4/26 2–3:30pm
               </p>
               <p className="font-body text-charcoal/80 leading-relaxed mb-4">
-                Join Stefanie Haberman &amp; Cynthia Tarantino for an evening of
-                Reiki &amp; Restorative yoga as we root to bloom into Spring.
+                Join Stefanie Haberman &amp; Cynthia Tarantino for an afternoon
+                of Reiki &amp; Restorative yoga as we root to bloom into Spring.
               </p>
               <p className="font-body text-charcoal/80 leading-relaxed mb-6">
                 With guided visualizations, calming breathing techniques and

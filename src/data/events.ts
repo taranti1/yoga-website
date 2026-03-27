@@ -23,7 +23,7 @@ export const upcomingEvents: Event[] = [
     id: "root-to-bloom",
     title: "Root To Bloom: Reiki & Restorative",
     date: "April 26, 2026",
-    time: "11:00 AM – 2:00 PM",
+    time: "2:00 PM – 3:30 PM",
     location: "with Stefanie & Cynthia",
     description:
       "An afternoon of restorative yoga and reiki to root and bloom into Spring — guided visualizations, breathwork, essential oils, and individual hands-on reiki.",

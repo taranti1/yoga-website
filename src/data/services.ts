@@ -70,7 +70,7 @@ export const reikiServices: ReikiService[] = [
     slug: "distant-reiki",
     name: "Distant Reiki",
     description:
-      "Reiki energy transcends physical space. In a distant session, you relax in the comfort of your own home while I send healing energy remotely. We connect via video call or phone at the start and end of the session. Many clients find distant sessions equally powerful and deeply transformative.",
+      "Reiki energy transcends physical space. In a distant session, you relax in the comfort of your own home while I send healing energy remotely. We connect by Zoom or phone for the session. Many clients find distant sessions equally powerful and deeply transformative.",
     duration: "",
     format: "Remote",
     image: "/images/reiki/training/distant-reiki-v2.jpg",

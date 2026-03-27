@@ -47,32 +47,25 @@ export default function AboutPage() {
 
             <div className="space-y-6 font-body text-charcoal/80 leading-relaxed">
               <p>
-                I came to yoga the way many people do — exhausted, carrying more
-                tension in my body than I realized, and searching for something I
-                couldn&rsquo;t quite name. I recall being in a vinyasa class and
-                my breath carried me to place of calm and peace that was new to
-                me. In that moment I was pulled to continue a practice that would
-                be the anchor for everything else in my life.
+                There were so many people and situations that brought me to yoga
+                as if the universe was calling me to embrace it. It was always a
+                physical practice but what connected me to something
+                unexplainable was the movement with the breath. I recall being
+                in a vinyasa yoga class when my body, mind and breath were
+                flowing as one. I felt connected to something greater than
+                myself. That was the moment that would anchor me to expand into
+                the practice and beyond.
               </p>
 
               <p>
-                After several years of teacher training in yoga philosophy,
-                poses, breathwork and the energy body, teaching became a calling
-                for me. My desire to learn continued with an immersion in
-                restorative yoga certification with each of these areas deepening
-                my understanding of how the body holds and releases both physical
-                and emotional weight.
-              </p>
-
-              <p>
-                When I discovered Reiki, it felt like the missing piece. The
-                subtle energy work complemented my yoga practice so naturally
-                that I pursued training all the way to the Master/Teacher level.
-                Today I weave together movement, breath, and energy healing to
-                meet each student where they are. Whether you step onto the mat
-                for the very first time or you&rsquo;ve been practicing for
-                decades, my deepest intention is to create a space where you feel
-                held, seen, and free to simply be.
+                After years of training in asanas, yoga philosophy,
+                restorative yoga and breathwork, this passion was calling to me
+                to teach. It was teaching that opened up the subtle energy work
+                that complemented my yoga practice and directed me to the
+                trainings as a Reiki Master/Teacher. It is the Reiki energy that
+                directs me to guide others in a path of light and love to create
+                space for healing and growth. I am so grateful to be part of
+                your journey.
               </p>
             </div>
           </div>

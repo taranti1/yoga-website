@@ -10,16 +10,6 @@ export interface Event {
 
 export const upcomingEvents: Event[] = [
   {
-    id: "petite-retreat-sept",
-    title: "Petite Retreat at Orchard View Lavender Farm",
-    date: "September 18, 2026",
-    time: "11:00 AM – 3:00 PM",
-    location: "Orchard View Lavender Farm, Port Murray, NJ",
-    description:
-      "A signature day of renewal weaving together gentle yoga, reiki healing, guided meditation, and mindful connection with nature surrounded by fragrant lavender fields.",
-    image: "/images/reiki/retreat/retreat-2.jpg",
-  },
-  {
     id: "root-to-bloom",
     title: "Root To Bloom: Reiki & Restorative",
     date: "April 26, 2026",
@@ -28,6 +18,16 @@ export const upcomingEvents: Event[] = [
     description:
       "An afternoon of restorative yoga and reiki to root and bloom into Spring — guided visualizations, breathwork, essential oils, and individual hands-on reiki.",
     image: "/images/reiki/training/training-1.jpg",
+  },
+  {
+    id: "petite-retreat-sept",
+    title: "Petite Retreat at Orchard View Lavender Farm",
+    date: "September 18, 2026",
+    time: "11:00 AM – 3:00 PM",
+    location: "Orchard View Lavender Farm, Port Murray, NJ",
+    description:
+      "A signature day of renewal weaving together gentle yoga, reiki healing, guided meditation, and mindful connection with nature surrounded by fragrant lavender fields.",
+    image: "/images/reiki/retreat/retreat-2.jpg",
   },
   {
     id: "art-of-reiki",

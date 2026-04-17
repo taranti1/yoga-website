@@ -15,9 +15,73 @@ const retreatImages = [
 export default function RetreatFeature() {
   return (
     <>
+      {/* ─── Root To Bloom ─── */}
+      <div id="reiki-workshops">
+        <SectionWrapper background="sand">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="order-2 lg:order-1"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/reiki/training/training-1.jpg"
+                  alt="Reiki and Restorative workshop"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </motion.div>
+
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+              className="order-1 lg:order-2"
+            >
+              <span className="font-body text-xs uppercase tracking-[0.2em] text-clay mb-4 block">
+                Upcoming Workshop
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl text-deep-forest font-light mb-2">
+                Root To Bloom: Reiki &amp; Restorative
+              </h2>
+              <p className="font-body text-sm text-charcoal/60 mb-2">
+                with Stefanie &amp; Cynthia: Sunday, 4/26 2–3:30pm
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-4">
+                Join Stefanie Haberman &amp; Cynthia Tarantino for an afternoon
+                of Reiki &amp; Restorative yoga as we root to bloom into Spring.
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-6">
+                With guided visualizations, calming breathing techniques and
+                soothing essential oils, we blend restorative yoga poses with an
+                individual hands-on reiki experience to allow the release of
+                physical tension and holding, create space for the breath and
+                balance the nervous system. As you open to deeper relaxation, the
+                energy will nourish and renew you so you leave feeling boundless
+                and bright.
+              </p>
+              <p className="font-heading text-lg text-deep-forest mb-8">
+                $55 per person
+              </p>
+              <Button href="/contact" variant="primary" size="lg">
+                Reserve Your Spot
+              </Button>
+            </motion.div>
+          </div>
+        </SectionWrapper>
+      </div>
+
       {/* ─── Petite Reiki Retreat ─── */}
       <div id="petite-retreat">
-        <SectionWrapper background="sand">
+        <SectionWrapper background="warm-white">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
             {/* Text Content */}
             <motion.div
@@ -119,70 +183,6 @@ export default function RetreatFeature() {
                   />
                 </div>
               ))}
-            </motion.div>
-          </div>
-        </SectionWrapper>
-      </div>
-
-      {/* ─── Reiki Workshops ─── */}
-      <div id="reiki-workshops">
-        <SectionWrapper background="warm-white">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
-            {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="order-2 lg:order-1"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                <Image
-                  src="/images/reiki/training/training-1.jpg"
-                  alt="Reiki and Restorative workshop"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
-            </motion.div>
-
-            {/* Text Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-              className="order-1 lg:order-2"
-            >
-              <span className="font-body text-xs uppercase tracking-[0.2em] text-clay mb-4 block">
-                Upcoming Workshop
-              </span>
-              <h2 className="font-heading text-3xl md:text-4xl text-deep-forest font-light mb-2">
-                Root To Bloom: Reiki &amp; Restorative
-              </h2>
-              <p className="font-body text-sm text-charcoal/60 mb-2">
-                with Stefanie &amp; Cynthia: Sunday, 4/26 2–3:30pm
-              </p>
-              <p className="font-body text-charcoal/80 leading-relaxed mb-4">
-                Join Stefanie Haberman &amp; Cynthia Tarantino for an afternoon
-                of Reiki &amp; Restorative yoga as we root to bloom into Spring.
-              </p>
-              <p className="font-body text-charcoal/80 leading-relaxed mb-6">
-                With guided visualizations, calming breathing techniques and
-                soothing essential oils, we blend restorative yoga poses with an
-                individual hands-on reiki experience to allow the release of
-                physical tension and holding, create space for the breath and
-                balance the nervous system. As you open to deeper relaxation, the
-                energy will nourish and renew you so you leave feeling boundless
-                and bright.
-              </p>
-              <p className="font-heading text-lg text-deep-forest mb-8">
-                $55 per person
-              </p>
-              <Button href="/contact" variant="primary" size="lg">
-                Reserve Your Spot
-              </Button>
             </motion.div>
           </div>
         </SectionWrapper>

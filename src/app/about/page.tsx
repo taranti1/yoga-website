@@ -30,7 +30,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/cynthia/about-portrait.jpg"
+                src="/images/cynthia/cyn-tree.jpg"
                 alt="Cynthia sitting in a cherry blossom tree"
                 fill
                 className="object-cover"

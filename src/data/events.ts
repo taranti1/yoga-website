@@ -6,6 +6,9 @@ export interface Event {
   location: string;
   description: string;
   image: string;
+  servicesAnchor: string;
+  registerUrl?: string;
+  isPast?: boolean;
 }
 
 export const upcomingEvents: Event[] = [
@@ -18,6 +21,21 @@ export const upcomingEvents: Event[] = [
     description:
       "An afternoon of restorative yoga and reiki to root and bloom into Spring — guided visualizations, breathwork, essential oils, and individual hands-on reiki.",
     image: "/images/reiki/training/training-1.jpg",
+    servicesAnchor: "reiki-workshops",
+    isPast: true,
+  },
+  {
+    id: "reiki-restore-lbif",
+    title: "Reiki + Restore to Bloom into Summer",
+    date: "July 16, 2026",
+    time: "6:30 PM – 8:00 PM",
+    location: "Long Beach Island Foundation, Loveladies, NJ",
+    description:
+      "An evening of Reiki and restorative yoga with guided meditation, prop-supported poses, and individual Reiki assists to help your heart's desires bloom into summer.",
+    image: "/images/reiki/training/training-2.jpg",
+    servicesAnchor: "reiki-restore-lbif",
+    registerUrl:
+      "https://login.lbifoundation.org/LBIF/class-details?id=a0SVr00000s6MOXMA2&tab=classes",
   },
   {
     id: "petite-retreat-sept",
@@ -28,6 +46,7 @@ export const upcomingEvents: Event[] = [
     description:
       "A signature day of renewal weaving together gentle yoga, reiki healing, guided meditation, and mindful connection with nature surrounded by fragrant lavender fields.",
     image: "/images/reiki/retreat/retreat-2.jpg",
+    servicesAnchor: "petite-retreat",
   },
   {
     id: "art-of-reiki",
@@ -38,5 +57,6 @@ export const upcomingEvents: Event[] = [
     description:
       "A transformational two-day Reiki certification training covering attunements, hand placements, symbols, distant healing, chakra balancing, and crystal work.",
     image: "/images/reiki/training/training-4.jpg",
+    servicesAnchor: "reiki-trainings",
   },
 ];

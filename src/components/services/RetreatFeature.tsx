@@ -47,7 +47,7 @@ export default function RetreatFeature() {
               className="order-1 lg:order-2"
             >
               <span className="font-body text-xs uppercase tracking-[0.2em] text-clay mb-4 block">
-                Upcoming Workshop
+                All Events
               </span>
               <h2 className="font-heading text-3xl md:text-4xl text-deep-forest font-light mb-2">
                 Root To Bloom: Reiki &amp; Restorative
@@ -68,12 +68,73 @@ export default function RetreatFeature() {
                 energy will nourish and renew you so you leave feeling boundless
                 and bright.
               </p>
+            </motion.div>
+          </div>
+        </SectionWrapper>
+      </div>
+
+      {/* ─── Reiki Restore at LBIF ─── */}
+      <div id="reiki-restore-lbif">
+        <SectionWrapper background="warm-white">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="order-2 lg:order-1"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/reiki/training/training-2.jpg"
+                  alt="Reiki + Restore to Bloom into Summer workshop"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </motion.div>
+
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+              className="order-1 lg:order-2"
+            >
+              <span className="font-body text-xs uppercase tracking-[0.2em] text-clay mb-4 block">
+                LBI Foundation Workshop
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl text-deep-forest font-light mb-2">
+                Reiki + Restore to Bloom into Summer
+              </h2>
+              <p className="font-body text-sm text-charcoal/60 mb-2">
+                Thursday, 7/16 6:30–8:00pm — Long Beach Island Foundation, Loveladies, NJ
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-4">
+                Join Reiki Master/Teacher Cynthia Tarantino for an evening
+                combining Reiki and restorative yoga to help your heart&rsquo;s
+                desires bloom into summer.
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-6">
+                The session incorporates guided meditation, prop-supported
+                poses, and individual Reiki assists to calm the nervous system
+                and open the body, leaving you with a sense of renewal and
+                reflection. Registration is required and spaces are limited.
+              </p>
               <p className="font-heading text-lg text-deep-forest mb-8">
                 $55 per person
               </p>
-              <Button href="/contact" variant="primary" size="lg">
+              <a
+                href="https://login.lbifoundation.org/LBIF/class-details?id=a0SVr00000s6MOXMA2&tab=classes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-deep-forest text-warm-white font-body text-sm font-semibold tracking-wide uppercase hover:bg-sage transition-colors duration-300"
+              >
                 Reserve Your Spot
-              </Button>
+              </a>
             </motion.div>
           </div>
         </SectionWrapper>
@@ -81,7 +142,7 @@ export default function RetreatFeature() {
 
       {/* ─── Petite Reiki Retreat ─── */}
       <div id="petite-retreat">
-        <SectionWrapper background="warm-white">
+        <SectionWrapper background="sand">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
             {/* Text Content */}
             <motion.div
@@ -148,7 +209,7 @@ export default function RetreatFeature() {
                 Space is limited. All levels of yoga experience are welcome.
               </p>
               <p className="font-heading text-lg text-deep-forest mb-8">
-                $155 per person
+                $175 per person
               </p>
               <Button href="/contact" variant="primary" size="lg">
                 Reserve Your Spot
@@ -190,7 +251,7 @@ export default function RetreatFeature() {
 
       {/* ─── Reiki Trainings ─── */}
       <div id="reiki-trainings">
-        <SectionWrapper background="sand">
+        <SectionWrapper background="warm-white">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
             {/* Text Content */}
             <motion.div

@@ -127,16 +127,22 @@ function ReikiGrid() {
 
 const eventSummaries = [
   {
-    title: "Petite Reiki Retreat",
-    description: "A signature day of renewal at Orchard View Lavender Farm — gentle yoga, reiki healing, guided meditation, and mindful connection with nature.",
-    anchor: "petite-retreat",
-    image: "/images/reiki/retreat/retreat-2.jpg",
-  },
-  {
     title: "Reiki Workshops",
     description: "Special evening gatherings blending restorative yoga, reiki healing, breathwork, and guided visualization for deep renewal.",
     anchor: "reiki-workshops",
     image: "/images/reiki/training/training-1.jpg",
+  },
+  {
+    title: "Reiki Restore at LBIF",
+    description: "An evening of Reiki and restorative yoga at the Long Beach Island Foundation — guided meditation, prop-supported poses, and individual Reiki assists.",
+    anchor: "reiki-restore-lbif",
+    image: "/images/reiki/training/training-2.jpg",
+  },
+  {
+    title: "Petite Reiki Retreat",
+    description: "A signature day of renewal at Orchard View Lavender Farm — gentle yoga, reiki healing, guided meditation, and mindful connection with nature.",
+    anchor: "petite-retreat",
+    image: "/images/reiki/retreat/retreat-2.jpg",
   },
   {
     title: "Reiki Trainings",
@@ -148,7 +154,7 @@ const eventSummaries = [
 
 function EventsGrid() {
   return (
-    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-8 sm:grid-cols-2">
       {eventSummaries.map((event) => (
         <motion.div
           key={event.anchor}

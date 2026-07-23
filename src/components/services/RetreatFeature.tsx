@@ -208,6 +208,11 @@ export default function RetreatFeature() {
               <p className="font-body text-sm text-charcoal/60 italic mb-2">
                 Space is limited. All levels of yoga experience are welcome.
               </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-4">
+                Registration opens July 27. To reserve your spot, please email
+                me with &ldquo;I&rsquo;m In!&rdquo; in the subject line. To
+                hold your spot, please Venmo $175 to @cynthia-tarantino.
+              </p>
               <p className="font-heading text-lg text-deep-forest mb-8">
                 $175 per person
               </p>

@@ -22,8 +22,8 @@ export default function EventsPreview() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {upcomingEvents.map((event, i) => {
+      <div className="grid grid-cols-1 gap-6 max-w-4xl mx-auto">
+        {upcomingEvents.filter((event) => !event.isPast).map((event, i) => {
           const detailsHref = `/services#${event.servicesAnchor}`;
 
           return (

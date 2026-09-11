@@ -15,129 +15,19 @@ const retreatImages = [
 export default function RetreatFeature() {
   return (
     <>
-      {/* ─── Root To Bloom ─── */}
-      <div id="reiki-workshops">
-        <SectionWrapper background="sand">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
-            {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="order-2 lg:order-1"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                <Image
-                  src="/images/reiki/training/training-1.jpg"
-                  alt="Reiki and Restorative workshop"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
-            </motion.div>
-
-            {/* Text Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-              className="order-1 lg:order-2"
-            >
-              <span className="font-body text-xs uppercase tracking-[0.2em] text-clay mb-4 block">
-                All Events
-              </span>
-              <h2 className="font-heading text-3xl md:text-4xl text-deep-forest font-light mb-2">
-                Root To Bloom: Reiki &amp; Restorative
-              </h2>
-              <p className="font-body text-sm text-charcoal/60 mb-2">
-                with Stefanie &amp; Cynthia: Sunday, 4/26 2–3:30pm
-              </p>
-              <p className="font-body text-charcoal/80 leading-relaxed mb-4">
-                Join Stefanie Haberman &amp; Cynthia Tarantino for an afternoon
-                of Reiki &amp; Restorative yoga as we root to bloom into Spring.
-              </p>
-              <p className="font-body text-charcoal/80 leading-relaxed mb-6">
-                With guided visualizations, calming breathing techniques and
-                soothing essential oils, we blend restorative yoga poses with an
-                individual hands-on reiki experience to allow the release of
-                physical tension and holding, create space for the breath and
-                balance the nervous system. As you open to deeper relaxation, the
-                energy will nourish and renew you so you leave feeling boundless
-                and bright.
-              </p>
-            </motion.div>
-          </div>
-        </SectionWrapper>
-      </div>
-
-      {/* ─── Reiki Restore at LBIF ─── */}
-      <div id="reiki-restore-lbif">
-        <SectionWrapper background="warm-white">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
-            {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="order-2 lg:order-1"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                <Image
-                  src="/images/reiki/training/training-2.jpg"
-                  alt="Reiki + Restore to Bloom into Summer workshop"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
-            </motion.div>
-
-            {/* Text Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-              className="order-1 lg:order-2"
-            >
-              <span className="font-body text-xs uppercase tracking-[0.2em] text-clay mb-4 block">
-                LBI Foundation Workshop
-              </span>
-              <h2 className="font-heading text-3xl md:text-4xl text-deep-forest font-light mb-2">
-                Reiki + Restore to Bloom into Summer
-              </h2>
-              <p className="font-body text-sm text-charcoal/60 mb-2">
-                Thursday, 7/16 6:30–8:00pm — Long Beach Island Foundation, Loveladies, NJ
-              </p>
-              <p className="font-body text-charcoal/80 leading-relaxed mb-4">
-                Join Reiki Master/Teacher Cynthia Tarantino for an evening
-                combining Reiki and restorative yoga to help your heart&rsquo;s
-                desires bloom into summer.
-              </p>
-              <p className="font-body text-charcoal/80 leading-relaxed mb-6">
-                The session incorporates guided meditation, prop-supported
-                poses, and individual Reiki assists to calm the nervous system
-                and open the body, leaving you with a sense of renewal and
-                reflection. Registration is required and spaces are limited.
-              </p>
-              <p className="font-heading text-lg text-deep-forest mb-8">
-                $55 per person
-              </p>
-              <a
-                href="https://login.lbifoundation.org/LBIF/class-details?id=a0SVr00000s6MOXMA2&tab=classes"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-deep-forest text-warm-white font-body text-sm font-semibold tracking-wide uppercase hover:bg-sage transition-colors duration-300"
-              >
-                Reserve Your Spot
-              </a>
-            </motion.div>
-          </div>
-        </SectionWrapper>
+      {/* ═══ Upcoming Events ═══ */}
+      <div className="bg-deep-forest text-warm-white">
+        <div className="mx-auto max-w-[1280px] px-6 md:px-12 lg:px-20 py-14 lg:py-16 text-center">
+          <p className="font-body text-xs tracking-[0.2em] uppercase text-sage-light mb-3">
+            Join Us
+          </p>
+          <h2 className="font-heading text-4xl md:text-5xl font-light">
+            Upcoming Events
+          </h2>
+          <p className="font-body text-sm text-warm-white/70 mt-3">
+            Gatherings, workshops, and trainings on the calendar
+          </p>
+        </div>
       </div>
 
       {/* ─── Petite Reiki Retreat ─── */}
@@ -254,9 +144,73 @@ export default function RetreatFeature() {
         </SectionWrapper>
       </div>
 
+      {/* ─── Ground in Autumn ─── */}
+      <div id="ground-in-autumn">
+        <SectionWrapper background="warm-white">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="order-2 lg:order-1"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/reiki/training/training-1.jpg"
+                  alt="Ground in Autumn: Reiki and Restorative workshop"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </motion.div>
+
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+              className="order-1 lg:order-2"
+            >
+              <span className="font-body text-xs uppercase tracking-[0.2em] text-clay mb-4 block">
+                Alluem Yoga Workshop
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl text-deep-forest font-light mb-2">
+                Ground in Autumn: Reiki &amp; Restorative
+              </h2>
+              <p className="font-body text-sm text-charcoal/60 mb-1">
+                with Cynthia, Friday 9/25
+              </p>
+              <p className="font-body text-sm text-charcoal/60 mb-4">
+                7:30–9:00 PM at Alluem Yoga, Cranford
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-4">
+                Join Reiki Medium, Cynthia Tarantino, for an evening of Reiki
+                &amp; Restorative Yoga to welcome the Autumnal shift to shorter
+                days and cooler nights for a seasonal reset.
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-8">
+                Just as the leaves in Autumn fall from the trees, we release any
+                excess energy and prepare for a period of rest. With calming
+                prop-supported yoga poses, an individual hands-on Reiki healing
+                experience, and a guided aura meditation, we will relax to
+                release and ground to reflect on what we want to harvest from
+                summer&rsquo;s growth.
+              </p>
+              <Button href="/contact" variant="primary" size="lg">
+                Reserve Your Spot
+              </Button>
+            </motion.div>
+          </div>
+        </SectionWrapper>
+      </div>
+
       {/* ─── Reiki Trainings ─── */}
       <div id="reiki-trainings">
-        <SectionWrapper background="warm-white">
+        <SectionWrapper background="sand">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
             {/* Text Content */}
             <motion.div
@@ -383,6 +337,135 @@ export default function RetreatFeature() {
           </div>
         </SectionWrapper>
       </div>
+      {/* ═══ Past Events ═══ */}
+      <div className="bg-deep-forest text-warm-white">
+        <div className="mx-auto max-w-[1280px] px-6 md:px-12 lg:px-20 py-14 lg:py-16 text-center">
+          <p className="font-body text-xs tracking-[0.2em] uppercase text-sage-light mb-3">
+            A Look Back
+          </p>
+          <h2 className="font-heading text-4xl md:text-5xl font-light">
+            Past Events
+          </h2>
+          <p className="font-body text-sm text-warm-white/70 mt-3">
+            Recent gatherings we were grateful to share
+          </p>
+        </div>
+      </div>
+
+      {/* ─── Reiki Restore at LBIF (past) ─── */}
+      <div id="reiki-restore-lbif">
+        <SectionWrapper background="sand">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="order-2 lg:order-1"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/reiki/training/training-2.jpg"
+                  alt="Reiki + Restore to Bloom into Summer workshop"
+                  fill
+                  className="object-cover grayscale-[35%] hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </motion.div>
+
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+              className="order-1 lg:order-2"
+            >
+              <span className="inline-block font-body text-xs uppercase tracking-[0.2em] text-charcoal/60 bg-charcoal/5 rounded-full px-3 py-1 mb-4">
+                Past Event &middot; July 2026
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl text-deep-forest font-light mb-2">
+                Reiki + Restore to Bloom into Summer
+              </h2>
+              <p className="font-body text-sm text-charcoal/60 mb-2">
+                Thursday, 7/16 6:30–8:00pm — Long Beach Island Foundation, Loveladies, NJ
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-4">
+                Join Reiki Master/Teacher Cynthia Tarantino for an evening
+                combining Reiki and restorative yoga to help your heart&rsquo;s
+                desires bloom into summer.
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed">
+                The session incorporates guided meditation, prop-supported
+                poses, and individual Reiki assists to calm the nervous system
+                and open the body, leaving you with a sense of renewal and
+                reflection.
+              </p>
+            </motion.div>
+          </div>
+        </SectionWrapper>
+      </div>
+
+      {/* ─── Root To Bloom (past) ─── */}
+      <div id="reiki-workshops">
+        <SectionWrapper background="warm-white">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="order-2 lg:order-1"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/reiki/training/training-1.jpg"
+                  alt="Reiki and Restorative workshop"
+                  fill
+                  className="object-cover grayscale-[35%] hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </motion.div>
+
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+              className="order-1 lg:order-2"
+            >
+              <span className="inline-block font-body text-xs uppercase tracking-[0.2em] text-charcoal/60 bg-charcoal/5 rounded-full px-3 py-1 mb-4">
+                Past Event &middot; April 2026
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl text-deep-forest font-light mb-2">
+                Root To Bloom: Reiki &amp; Restorative
+              </h2>
+              <p className="font-body text-sm text-charcoal/60 mb-2">
+                with Stefanie &amp; Cynthia: Sunday, 4/26 2–3:30pm
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-4">
+                Join Stefanie Haberman &amp; Cynthia Tarantino for an afternoon
+                of Reiki &amp; Restorative yoga as we root to bloom into Spring.
+              </p>
+              <p className="font-body text-charcoal/80 leading-relaxed mb-6">
+                With guided visualizations, calming breathing techniques and
+                soothing essential oils, we blend restorative yoga poses with an
+                individual hands-on reiki experience to allow the release of
+                physical tension and holding, create space for the breath and
+                balance the nervous system. As you open to deeper relaxation, the
+                energy will nourish and renew you so you leave feeling boundless
+                and bright.
+              </p>
+            </motion.div>
+          </div>
+        </SectionWrapper>
+      </div>
+
     </>
   );
 }

@@ -36,6 +36,7 @@ export const upcomingEvents: Event[] = [
     servicesAnchor: "reiki-restore-lbif",
     registerUrl:
       "https://login.lbifoundation.org/LBIF/class-details?id=a0SVr00000s6MOXMA2&tab=classes",
+    isPast: true,
   },
   {
     id: "petite-retreat-sept",
@@ -47,6 +48,17 @@ export const upcomingEvents: Event[] = [
       "A signature day of renewal weaving together gentle yoga, reiki healing, guided meditation, and mindful connection with nature surrounded by fragrant lavender fields.",
     image: "/images/reiki/retreat/retreat-2.jpg",
     servicesAnchor: "petite-retreat",
+  },
+  {
+    id: "ground-in-autumn",
+    title: "Ground in Autumn: Reiki & Restorative",
+    date: "September 25, 2026",
+    time: "7:30 PM – 9:00 PM",
+    location: "Alluem Yoga, Cranford, NJ",
+    description:
+      "An evening of Reiki and restorative yoga to welcome the Autumnal shift — calming prop-supported poses, individual hands-on Reiki, and a guided aura meditation to release, ground, and reflect on what we want to harvest from summer's growth.",
+    image: "/images/reiki/training/training-1.jpg",
+    servicesAnchor: "ground-in-autumn",
   },
   {
     id: "art-of-reiki",

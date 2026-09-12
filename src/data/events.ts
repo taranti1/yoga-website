@@ -57,7 +57,7 @@ export const upcomingEvents: Event[] = [
     location: "Alluem Yoga, Cranford, NJ",
     description:
       "An evening of Reiki and restorative yoga to welcome the Autumnal shift — calming prop-supported poses, individual hands-on Reiki, and a guided aura meditation to release, ground, and reflect on what we want to harvest from summer's growth.",
-    image: "/images/reiki/training/training-1.jpg",
+    image: "/images/cynthia/autumn-maple.jpg",
     servicesAnchor: "ground-in-autumn",
   },
   {

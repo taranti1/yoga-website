@@ -136,7 +136,8 @@ const eventSummaries = [
     title: "Ground in Autumn",
     description: "An evening of Reiki and restorative yoga at Alluem Yoga, Cranford — prop-supported poses, hands-on Reiki, and a guided aura meditation for a seasonal reset.",
     anchor: "ground-in-autumn",
-    image: "/images/reiki/training/training-1.jpg",
+    image: "/images/cynthia/autumn-maple.jpg",
+    imagePosition: "object-[50%_35%]",
   },
   {
     title: "Reiki Trainings",
@@ -163,7 +164,7 @@ function EventsGrid() {
               src={event.image}
               alt={event.title}
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              className={`object-cover transition-transform duration-500 group-hover:scale-105 ${event.imagePosition ?? ""}`}
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>

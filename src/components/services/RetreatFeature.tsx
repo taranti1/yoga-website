@@ -156,9 +156,9 @@ export default function RetreatFeature() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="order-2 lg:order-1"
             >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
                 <Image
-                  src="/images/reiki/training/training-1.jpg"
+                  src="/images/cynthia/autumn-maple.jpg"
                   alt="Ground in Autumn: Reiki and Restorative workshop"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -366,10 +366,10 @@ export default function RetreatFeature() {
             >
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
                 <Image
-                  src="/images/reiki/training/training-2.jpg"
+                  src="/images/cynthia/cynthia-sept-2026.jpg"
                   alt="Reiki + Restore to Bloom into Summer workshop"
                   fill
-                  className="object-cover grayscale-[35%] hover:scale-105 transition-transform duration-500"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
